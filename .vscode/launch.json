@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/yoon-eunsang/Desktop/SBU/ESE124_Fundamental_Programming/LabWorks/LabWorks8/lab-activity-8-week-10-DanielYoon116152435",
+      "program": "/Users/yoon-eunsang/Desktop/SBU/ESE124_Fundamental_Programming/LabWorks/LabWorks8/lab-activity-8-week-10-DanielYoon116152435/build/Debug/outDebug"
+    }
+  ]
+}
