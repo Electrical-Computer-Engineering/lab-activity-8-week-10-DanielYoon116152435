@@ -39,7 +39,7 @@ int my_is_upper(char ch)
     }
 }
 
-char my_to_upper(char ch)
+char my_to_upper(char ch)//char type returns character
 {
     if (ch >= 'a' && ch <= 'z')
     {
