@@ -61,16 +61,15 @@ char *my_strcat(char dest[], char src[])
     {
         i++;
     }
-    
-    int j;
-    for (j = 0; src[j] != '\0'; j++)
+
+    int j = 0;
+    while (src[i] != '\0')
     {
         dest[i] = src[j];
         i++;
     }
 
     dest[i] = '\0'; // null-terminating
-    printf("in concar %s", dest);
     return dest;
 }
 
@@ -112,14 +111,11 @@ int main()
 
         if (command == 1)
         {
-            if (!my_strcmp(str1, str2))
+            if (my_strcmp(str1, str2))
             {
-                printf("Two strings are equal as "
-                       "%s"
-                       "\n",
-                       str1);
+                printf("Two strings are equal as %s\n", str1);
             }
-            else if (my_strcmp(str1, str2))
+            else if (!my_strcmp(str1, str2))
             {
                 printf("Two strings are different.\n");
             }
@@ -148,13 +144,13 @@ int main()
         {
             printf("Updated string1:\n");
             my_strcat(str1, str2);
-            printf("%s", str1);
+            printf("%s\n", str1);
         }
         else if (command == 5)
         {
             printf("Updated string1:\n");
             my_reverse(str1, str2);
-            printf("%s", str1);
+            printf("%s\n", str1);
         }
         else if (command == 6)
         {
